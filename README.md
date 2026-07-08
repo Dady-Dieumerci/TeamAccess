@@ -1,36 +1,120 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TeamAccess - Role-Based Access Control (RBAC) Dashboard
+
+A modern full-stack Role-Based Access Control (RBAC) dashboard built with NEXT.js**, TYPESCRIPT, **PRSIMA**, and **POSTGRESQL**. The application demonstrates secure authentication, authorization, and role-based access management for teams.
+
+## Features
+
+* 🔐 JWT Authentication
+* 👥 Role-Based Access Control (RBAC)
+* 🛡️ Protected Routes
+* 👤 User Registration & Login
+* 🏢 Team Management
+* ✏️ Create, Update, and Delete Users
+* 🔑 Permission-Based Authorization
+* 🍪 Secure Cookie Authentication
+* 📱 Responsive Dashboard
+* ⚡ Built with the Next.js App Router
+
+## Tech Stack
+
+### Frontend
+
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+
+### Backend
+
+* Next.js API Routes
+* Prisma ORM
+* PostgreSQL (Neon Database)
+* JWT Authentication
+* bcrypt
+
+## Project Structure
+
+app/
+components/
+lib/
+prisma/
+public/
+```
 
 ## Getting Started
 
-First, run the development server:
+Clone the repository:
+
+```bash
+git clone https://github.com/Dady-Dieumerci/TeamAccess.git
+```
+
+Navigate into the project:
+
+```bash
+cd TeamAccess
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Create a `.env` file and add:
+
+```env
+DATABASE_URL=your_database_url
+JWT_SECRET=your_secret_key
+NEXT_PUBLIC_API_URL=http://localhost:3000
+```
+
+Generate Prisma Client:
+
+```bash
+npx prisma generate
+```
+
+Push the database schema:
+
+```bash
+npx prisma db push
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Future Improvements
 
-## Learn More
+* Email verification
+* Password reset
+* User profile management
+* Audit logs
+* Dark/Light mode
+* Unit and integration tests
+* Docker deployment
 
-To learn more about Next.js, take a look at the following resources:
+## What I Learned
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+While building this project, I gained practical experience with:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* Building secure authentication systems
+* Implementing Role-Based Access Control (RBAC)
+* Protecting API routes
+* Working with Prisma ORM
+* Integrating PostgreSQL using Neon
+* Managing authentication using JWT and cookies
+* Structuring scalable Next.js applications
 
-## Deploy on Vercel
+## Author
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Dady Dieumerci**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+GitHub: https://github.com/Dady-Dieumerci
