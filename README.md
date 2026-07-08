@@ -1,6 +1,6 @@
 # TeamAccess - Role-Based Access Control (RBAC) Dashboard
 
-A modern full-stack Role-Based Access Control (RBAC) dashboard built with NEXT.js**, TYPESCRIPT, **PRSIMA**, and **POSTGRESQL**. The application demonstrates secure authentication, authorization, and role-based access management for teams.
+A modern full-stack Role-Based Access Control (RBAC) dashboard built with **Next.js**, **Typescript, **Prisma**, and **PostgleSQL**. The application demonstrates secure authentication, authorization, and role-based access management for teams.
 
 ## Features
 
