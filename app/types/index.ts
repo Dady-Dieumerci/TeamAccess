@@ -12,7 +12,7 @@ export interface User {
     email:string; 
     role:Role;
     teamId?:string;
-    team:Team;
+    team?:Team | null;
     createdAt:Date;
     updatedAt:Date;
 }
