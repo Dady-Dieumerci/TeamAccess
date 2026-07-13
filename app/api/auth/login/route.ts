@@ -63,7 +63,7 @@ export async function POST(request: NextRequest) {
 
     return response;
   } catch (error) {
-    console.error(" Log in failed: error ");
+    console.error(" Log in failed: ",error );
 
     return NextResponse.json(
       {

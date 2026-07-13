@@ -32,42 +32,42 @@ class ApiClient {
   
  //Auth method
  async register(userData: unknown){
-   return this.request("api/auth/register",{
+   return this.request("/api/auth/register",{
     method: 'POST',
     body:JSON.stringify(userData),
    });
  }
  async login(email:string, password:string){
-   return this.request("api/auth/login",{
+   return this.request("/api/auth/login",{
     method: 'POST',
     body:JSON.stringify({email,password}),
    });
  }
  
  async logout(){
-   return this.request("api/auth/logout",{
+   return this.request("/api/auth/logout",{
     method: 'POST',
    });
  }
  async getCurrentUser(){
-   return this.request("api/auth/me");
+   return this.request("/api/auth/me");
  }
  
 
  //user method
   async getUsers(){
-   return this.request("api/users");
+   return this.request("/api/users");
  }
  
  //admin method
   async updateUserRole(userId:string , role:string){
-   return this.request(`api/user/${userId}/role`,{
+   return this.request(`/api/user/${userId}/role`,{
     method: 'PATCH',
     body: JSON.stringify({ role }),
    });
  }
   async assignUserToTeam(userId:string , teamId:string | null){
-   return this.request(`api/user/${userId}/team`,{
+   return this.request(`/api/user/${userId}/team`,{
     method: 'PATCH',
     body: JSON.stringify({teamId}),
    });
